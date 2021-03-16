@@ -1,0 +1,97 @@
+---
+title: "Myreport"
+author: 
+  -"Tessa Belo"
+  -"Collaborator"
+date: "3/16/2021"
+abstract: |
+  This is our abstract
+  
+  It consists of two paragraphs. 
+  
+output: html_document
+---
+
+# Header 1
+Biggest
+
+## Header 2
+Big
+
+### Header 3
+Pretty big
+
+#### Header 4
+Bold face header 
+
+<!-- Horizontal rules -->
+
+****
+____
+
+----
+
+# Intro to R md Formatting
+
+Here is an example of **bold** text, __bold__ 
+Here is an example of *italic* text, or _italic_
+Here is an example of ***bold italic*** text, ___bold italic___ 
+
+Super scripts x^2^ For subscripts x~0~ 
+<u>underline</u> 
+~~strikethrough~~ = ***no***!
+
+Here is an example of **bold** text, __bold__ 
+Here is an example of *italic* text, or _italic_
+Here is an example of ***bold italic*** text, ___bold italic___ 
+
+Super scripts x^2^ For subscripts x~0~ 
+<u>underline</u> 
+~~strikethrough~~ = ***no***!
+
+<!-- Line breaks -->
+
+Line 1  
+Line 2
+
+Line 1 <br>
+Line 2
+
+\* `<br>` only starts a new line, not a new paragraph 
+
+<!-- Paragraph -->
+
+Topic 1. It's such a fascinating paragraph  
+
+Topic 2: Some more great stuff  
+
+Topic 3: Blah blah Blah 
+
+<!-- Footnotes -->
+
+Here is a sentence that requires a footnote [^1]. This sentence follows the footnote.  
+
+[^1]: Here is our first footnote. 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
